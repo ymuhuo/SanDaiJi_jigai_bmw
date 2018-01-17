@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:id="@+id/speed_first"
+        style="@style/mySeekbar_linearLayout">
+
+
+        <com.bmw.dinosaursmall.view.view.VerticalPageSeekBar
+            android:id="@+id/car_speed"
+            style="@style/Widget.SeekBar.Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/seekbar_height"
+            android:max="5000" />
+
+        <TextView
+            style="@style/seekBar_text"
+            android:text="车行速" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/speed_second"
+        style="@style/mySeekbar_linearLayout"
+        android:layout_toRightOf="@+id/speed_first">
+
+
+        <com.bmw.dinosaursmall.view.view.VerticalPageSeekBar
+            android:id="@+id/car_turnSpeed"
+            style="@style/Widget.SeekBar.Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/seekbar_height"
+            android:max="5000" />
+
+        <TextView
+            style="@style/seekBar_text"
+            android:text="车转速" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/speed_thrid"
+        style="@style/mySeekbar_linearLayout"
+        android:layout_toRightOf="@+id/speed_second">
+
+        <com.bmw.dinosaursmall.view.view.VerticalPageSeekBar
+            android:id="@+id/swing_speed"
+            style="@style/Widget.SeekBar.Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/seekbar_height"
+            android:max="5000" />
+
+        <TextView
+            style="@style/seekBar_text"
+            android:text="摆速" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

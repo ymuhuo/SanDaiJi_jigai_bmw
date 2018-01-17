@@ -1,0 +1,184 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- 隐藏状态栏 -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Widget.SeekBar.Normal" parent="@android:style/Widget.SeekBar">
+        <item name="android:maxHeight">25.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/seekbar_horizontal</item>
+        <item name="android:minHeight">25.0dip</item>
+        <item name="android:thumb">@drawable/seebar_in</item>
+        <item name="android:thumbOffset">15.0dip</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <style name="myRadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">@drawable/bg_rbtn</item>
+    </style>
+
+    <style name="main_top_menu">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:background">@drawable/bg_ibtn</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="myHorizontalLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/bg_spacerlayer</item>
+    </style>
+    <style name="myVerticalLine">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/bg_spacerlayer</item>
+    </style>
+    
+    <style name="main_control">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:background">@drawable/bg_ibtn</item>
+    </style>
+    
+    <style name="main_other_control">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/img_btn_bg_out_circle</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="main_focus_boom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/bg_btn</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textSize">9pt</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_base</item>
+    </style>
+
+    <style name="view_anim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/view_appear</item>
+        <item name="android:windowExitAnimation">@anim/view_disappear</item>
+    </style>
+
+    <style name="environment_textSet">
+        <item name="android:textSize">8pt</item>
+        <item name="android:textColor">@color/text_base</item>
+    </style>
+
+    <style name="dialog_anim">
+        <item name="android:windowEnterAnimation">@anim/view_appear</item>
+        <item name="android:windowExitAnimation">@anim/view_disappear</item>
+    </style>
+    <style name="popue_anim_bf">
+        <item name="android:windowEnterAnimation">@anim/boom_focuse_appear</item>
+        <item name="android:windowExitAnimation">@anim/boom_focuse_disappear</item>
+    </style>
+
+    <style name="mySeekbar_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="mySeekbar_linearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/bg_solid_black</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="seekBar_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/seekbar_text_size</item>
+        <item name="android:textColor">@color/text_base</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+
+    <style name="SwitchButtonMD">
+        <item name="kswThumbDrawable">@drawable/ksw_md_thumb</item>
+        <item name="kswBackColor">@color/ksw_md_back_color</item>
+        <item name="kswBackMeasureRatio">1.45</item>
+        <item name="kswThumbMarginLeft">-16dp</item>
+        <item name="kswThumbMarginTop">-14dp</item>
+        <item name="kswThumbMarginRight">-16dp</item>
+        <item name="kswThumbMarginBottom">-14dp</item>
+        <item name="kswThumbWidth">@dimen/ksw_md_thumb_ripple_size</item>
+        <item name="kswThumbHeight">@dimen/ksw_md_thumb_ripple_size</item>
+    </style>
+
+    <style name="mySetting_Linear_out">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/bg_base</item>
+    </style>
+
+    <style name="my_setting_Linear_in">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="mySetting_edit">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/setting_edittext_size</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/text_base</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="connect_text" parent="seekBar_text">
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">@dimen/connect_text_size</item>
+    </style>
+
+
+
+    <style name="style_bottom_menu_img">
+        <item name="android:layout_width">@dimen/top_menu</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:background">@drawable/bg_img_btn</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!--
+    -->
+
+
+</resources>

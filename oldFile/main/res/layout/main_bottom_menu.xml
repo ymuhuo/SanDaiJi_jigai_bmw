@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/top_menu"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/img_zoom_add"
+            style="@style/style_bottom_menu_img"
+            android:src="@mipmap/zoom_add" />
+        <ImageView
+            android:id="@+id/img_zoom_sub"
+            style="@style/style_bottom_menu_img"
+            android:src="@mipmap/zoom_sub" />
+        <ImageView
+            android:id="@+id/img_size_add"
+            style="@style/style_bottom_menu_img"
+            android:src="@mipmap/size_add" />
+        <ImageView
+            android:id="@+id/img_size_sub"
+            style="@style/style_bottom_menu_img"
+            android:src="@mipmap/size_sub" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/preview_speed"
+        style="@style/style_bottom_menu_img"
+        android:src="@mipmap/speed" />
+
+    <ImageView
+        android:id="@+id/preview_light"
+        style="@style/style_bottom_menu_img"
+        android:src="@mipmap/light"
+        android:layout_marginRight="10dp"/>
+<!--
+    <ImageView
+        android:id="@+id/preview_change_camera"
+        style="@style/style_bottom_menu_img"
+        android:src="@mipmap/turn_camera" />-->
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/preview_top_menu"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/top_menu"
+    android:background="@color/bg_base"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/capture"
+            style="@style/main_top_menu"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:src="@mipmap/capture" />
+
+
+        <ImageView
+            android:id="@+id/record"
+            style="@style/main_top_menu"
+            android:layout_toRightOf="@+id/view_torightof_capture"
+            android:paddingBottom="6dp"
+            android:paddingTop="10dp"
+            android:src="@mipmap/record" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/preview_battery"
+        style="@style/main_top_menu"
+        android:layout_toLeftOf="@+id/view_toleftof_preview_video"
+        android:paddingTop="8dp"
+        android:src="@mipmap/battery1" />
+
+    <ImageButton
+        android:id="@+id/preview_connect"
+        style="@style/main_top_menu"
+        android:layout_toLeftOf="@+id/view_toleftof_preview_battery"
+        android:paddingTop="8dp"
+        android:src="@mipmap/disconnect" />
+
+
+    <ImageButton
+        android:id="@+id/preview_picture"
+        style="@style/main_top_menu"
+        android:layout_toLeftOf="@+id/view_toleftof_preview_model"
+        android:paddingTop="8dp"
+        android:src="@mipmap/picture" />
+
+
+    <ImageButton
+        android:id="@+id/preview_video"
+        style="@style/main_top_menu"
+        android:layout_toLeftOf="@+id/view_toleftof_preview_picture"
+        android:paddingTop="8dp"
+        android:src="@mipmap/video" />
+
+    <ImageButton
+        android:id="@+id/preview_model"
+        style="@style/main_top_menu"
+        android:layout_toLeftOf="@+id/view_toleftof_environment"
+        android:paddingTop="8dp"
+        android:src="@mipmap/model" />
+
+    <ImageButton
+        android:id="@+id/environment"
+        style="@style/main_top_menu"
+        android:layout_toLeftOf="@+id/view_toleftof_setting"
+        android:src="@mipmap/environmental" />
+
+    <ImageButton
+        android:id="@+id/preview_setting"
+        style="@style/main_top_menu"
+        android:layout_toLeftOf="@+id/view_toleftof_preview_shutdown"
+        android:paddingTop="2dp"
+        android:src="@mipmap/setting" />
+
+
+    <ImageButton
+        android:id="@+id/preview_shutdown"
+        style="@style/main_top_menu"
+        android:src="@mipmap/shutdown" />
+
+</LinearLayout>

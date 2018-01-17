@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="kswThumbDrawable" format="reference"/>
+        <attr name="kswThumbColor" format="color|reference"/>
+        <attr name="kswThumbMargin" format="dimension|reference"/>
+        <attr name="kswThumbMarginTop" format="dimension|reference"/>
+        <attr name="kswThumbMarginBottom" format="dimension|reference"/>
+        <attr name="kswThumbMarginLeft" format="dimension|reference"/>
+        <attr name="kswThumbMarginRight" format="dimension|reference"/>
+        <attr name="kswThumbWidth" format="dimension|reference"/>
+        <attr name="kswThumbHeight" format="dimension|reference"/>
+        <attr name="kswThumbRadius" format="dimension|reference"/>
+        <attr name="kswBackRadius" format="dimension|reference"/>
+        <attr name="kswBackDrawable" format="reference"/>
+        <attr name="kswBackColor" format="color|reference"/>
+        <attr name="kswFadeBack" format="boolean"/>
+        <attr name="kswBackMeasureRatio" format="float"/>
+        <attr name="kswAnimationDuration" format="integer"/>
+        <attr name="kswTintColor" format="color|reference"/>
+        <attr name="kswTextOn" format="string"/>
+        <attr name="kswTextOff" format="string"/>
+        <attr name="kswTextMarginH" format="dimension"/>
+        <attr name="kswAutoAdjustTextPosition" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="DirectionButton">
+        <attr name="splitLineWidth" format="dimension"/>
+        <attr name="splitLineColor" format="color|reference"/>
+        <attr name="normalColor" format="color|reference"/>
+        <attr name="pressColor" format="color|reference"/>
+        <attr name="normalCenterColor" format="color|reference"/>
+        <attr name="pressCenterColor" format="color|reference"/>
+        <attr name="isShowShadows" format="boolean"/>
+        <attr name="upImage" format="reference"/>
+        <attr name="dowmImage" format="reference"/>
+        <attr name="leftImage" format="reference"/>
+        <attr name="rightImage" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="RollButton">
+        <attr name="borderWidth" format="dimension"/>
+        <attr name="borderColor" format="color|reference"/>
+        <attr name="backColor" format="color|reference"/>
+        <attr name="ballCenterColor" format="color|reference"/>
+        <attr name="ballMarginColor" format="color|reference"/>
+        <attr name="isShadowShow" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="RockerButton">
+        <attr name="ballImage" format="reference"/>
+        <attr name="backImagePress" format="reference"/>
+        <attr name="ballRadius" format="dimension"/>
+        <attr name="ballRadiusPress" format="dimension"/>
+        <attr name="ballPressColor" format="color|reference"/>
+        <attr name="ballUnPressColor" format="color|reference"/>
+        <attr name="ballPressCenterColor" format="color|reference"/>
+        <attr name="ballUnPressCenterColor" format="color|reference"/>
+        <attr name="isShowShadow" format="boolean"/>
+        <attr name="isShowCircleBack" format="boolean"/>
+        <attr name="circleBackWidth" format="dimension"/>
+        <attr name="backUnPressAlpha" format="integer"/>
+    </declare-styleable>
+
+</resources>

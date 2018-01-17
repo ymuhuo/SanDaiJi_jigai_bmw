@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base">
+
+    <include layout="@layout/main_top_menu" />
+
+    <LinearLayout
+        android:layout_below="@+id/preview_top_menu"
+        android:id="@+id/right_of_surface"
+        android:layout_width="@dimen/control_right_contain"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_container_border"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:layout_marginLeft="5dp">
+
+        <include layout="@layout/main_zitai_img" />
+
+        <include layout="@layout/main_control_move" />
+
+    </LinearLayout>
+
+    <include layout="@layout/main_bottom_menu"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/main_bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_menu"
+        android:layout_toLeftOf="@+id/right_of_surface"/>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/preview_top_menu"
+        android:layout_above="@id/main_bottom_menu"
+        android:layout_toLeftOf="@+id/right_of_surface"
+        android:background="@drawable/bg_container_border"
+        android:padding="2dp">
+
+        <SurfaceView
+            android:id="@+id/preview_surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"/>
+<!--
+        <ImageView
+            android:id="@+id/preview_aim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/aim"
+            android:visibility="invisible"/>-->
+
+        <include layout="@layout/main_ptz_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

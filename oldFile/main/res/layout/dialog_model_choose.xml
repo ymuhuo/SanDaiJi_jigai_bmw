@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_container_border_small"
+    android:padding="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_base">
+
+        <TextView
+            android:id="@+id/model_title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:text="播放模式选择"
+            android:background="@color/bg_base"
+            android:textColor="@color/text_base"
+            android:textSize="9pt" />
+
+
+        <ScrollView
+            android:id="@+id/model_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_spacerlayer_half"
+            android:layout_below="@+id/model_title"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:scrollbars="none">
+
+            <com.bmw.dinosaursmall.view.view.MutiRadioGroup
+                android:id="@+id/model_radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/model_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/video_four"
+                        style="@style/myRadioButton"
+                        android:drawableTop="@mipmap/video_four" />
+
+                    <RadioButton
+                        android:id="@+id/video_ptz_front_ir_rear"
+                        style="@style/myRadioButton"
+                        android:drawableTop="@mipmap/video_ptz_front_ir_rear" />
+
+
+                    <RadioButton
+                        android:id="@+id/video_ptz_front_ir"
+                        style="@style/myRadioButton"
+                        android:drawableTop="@mipmap/video_ptz_front_ir" />
+
+                    <RadioButton
+                        android:id="@+id/video_ptz_ir_front"
+                        style="@style/myRadioButton"
+                        android:drawableTop="@mipmap/video_ptz_ir_front" />
+
+
+
+                    <RadioButton
+                        android:id="@+id/video_ptz_ir"
+                        style="@style/myRadioButton"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:drawableTop="@mipmap/video_ptz_ir" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/model_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/video_front"
+                        style="@style/myRadioButton"
+                        android:drawableTop="@mipmap/video_front" />
+
+                    <RadioButton
+                        android:id="@+id/video_rear"
+                        style="@style/myRadioButton"
+                        android:layout_marginLeft="5dp"
+                        android:drawableTop="@mipmap/video_rear" />
+
+                    <RadioButton
+                        android:id="@+id/video_ptz"
+                        style="@style/myRadioButton"
+                        android:layout_marginLeft="5dp"
+                        android:drawableTop="@mipmap/video_ptz" />
+
+                    <RadioButton
+                        android:id="@+id/video_ir"
+                        style="@style/myRadioButton"
+                        android:layout_marginLeft="5dp"
+                        android:drawableTop="@mipmap/video_ir" />
+                    <RadioButton
+                        android:id="@+id/video_ptz_ir_v"
+                        style="@style/myRadioButton"
+                        android:drawableTop="@mipmap/video_ptz_ir_v" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/model_third"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+
+            </com.bmw.dinosaursmall.view.view.MutiRadioGroup>
+        </ScrollView>
+
+    </RelativeLayout>
+</RelativeLayout>

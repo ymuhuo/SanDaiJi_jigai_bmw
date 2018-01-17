@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/preview_img"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/preview_swing_control"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/car_roll_angle"
+        android:layout_width="@dimen/zitai_image_size"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:src="@mipmap/car004" />
+
+    <!-- <LinearLayout
+         android:id="@+id/car_roll_linearlayout"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_weight="3"
+         android:gravity="center"
+         android:orientation="horizontal">
+
+     </LinearLayout>-->
+
+    <FrameLayout
+        android:id="@+id/carAndswing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/car_pitch_angle"
+            android:layout_width="@dimen/zitai_image_size"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/car002" />
+
+        <ImageView
+            android:id="@+id/swing_angle"
+            android:layout_width="@dimen/zitai_image_size"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/car003" />
+    </FrameLayout>
+
+</LinearLayout>

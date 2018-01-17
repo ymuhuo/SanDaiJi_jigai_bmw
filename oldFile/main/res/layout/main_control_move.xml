@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+
+    <ImageView
+        android:id="@+id/preview_change_camera"
+        style="@style/style_bottom_menu_img"
+        android:layout_height="@dimen/lift_control_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/turn_camera" />
+
+    <!--三星平板设置高度65-->
+    <com.bmw.dinosaursmall.view.view.RollButton
+        android:id="@+id/rollButton_SwingMove"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lift_control_height"
+        android:layout_toLeftOf="@id/preview_change_camera"
+        android:padding="5dp"
+        app:backColor="@color/nothing"
+        app:ballCenterColor="@color/text_base_light"
+        app:ballMarginColor="@color/text_base"
+        app:borderColor="@color/text_base"
+        app:borderWidth="3dp"
+        app:isShadowShow="false" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rollButton_SwingMove">
+        <!-- 三星平板球大小28 29 边距5-->
+
+        <com.bmw.dinosaursmall.view.view.RockerButton
+            android:id="@+id/moveControl_RockerButton"
+            android:layout_width="@dimen/control_right_contain"
+            android:layout_height="@dimen/control_right_contain"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            app:backImagePress="@mipmap/rocker_bgnew"
+            app:backUnPressAlpha="0xff"
+            app:ballRadius="@dimen/move_ball_width"
+            app:ballRadiusPress="@dimen/move_ball_press_width"
+            app:ballUnPressCenterColor="@color/text_base_light"
+            app:ballUnPressColor="@color/text_base"
+            app:circleBackWidth="3dp"
+            app:isShowCircleBack="false" />
+    </FrameLayout>
+
+</RelativeLayout>

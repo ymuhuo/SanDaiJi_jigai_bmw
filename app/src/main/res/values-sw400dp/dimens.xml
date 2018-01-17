@@ -1,0 +1,41 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="preview_textsize">10pt</dimen>
+
+
+    <dimen name="ksw_md_thumb_ripple_size">42dp</dimen>
+    <dimen name="ksw_md_thumb_solid_inset">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset_top">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset_bottom">10dp</dimen>
+
+    <dimen name="ksw_md_thumb_solid_size">20dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_size">21dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_offset">2dp</dimen>
+    <dimen name="connect_text_size">16sp</dimen>
+
+    <!--平板配置尺寸
+    <dimen name="control_right_contain">200dp</dimen>-->
+
+    <!--黄色平板-->
+    <dimen name="control_right_contain">160dp</dimen>
+    <dimen name="zitai_image_size">100dp</dimen>
+    <dimen name="seekbar_text_size">15sp</dimen>
+    <dimen name="setting_edittext_size">7pt</dimen>
+    <dimen name="top_menu">45dp</dimen>
+    <dimen name="dp_contain_radius">3dp</dimen>
+    <dimen name="seekbar_height">200dp</dimen>
+    <dimen name="ptz_ball_width">22dp</dimen>
+    <dimen name="move_ball_width">23dp</dimen>
+    <dimen name="move_ball_press_width">24dp</dimen>
+
+
+    <!--手机配置尺寸 -->
+    <!-- <dimen name="control_right_contain">160dp</dimen>
+    <dimen name="zitai_image_size">40dp</dimen>
+    <dimen name="seekbar_text_size">6pt</dimen>
+    <dimen name="setting_edittext_size">5pt</dimen>
+    <dimen name="top_menu">45dp</dimen>-->
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:id="@+id/light_first"
+        style="@style/mySeekbar_linearLayout">
+
+
+        <com.bmw.dinosaursmall.view.view.VerticalPageSeekBar
+            android:id="@+id/foward_light_seekBar"
+            style="@style/Widget.SeekBar.Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/seekbar_height"
+            android:max="0x0a" />
+
+        <TextView
+            android:text="前    灯"
+            style="@style/seekBar_text"  />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/light_second"
+        style="@style/mySeekbar_linearLayout"
+        android:layout_toRightOf="@+id/light_first">
+
+        <com.bmw.dinosaursmall.view.view.VerticalPageSeekBar
+            android:id="@+id/back_light_seekBar"
+            style="@style/Widget.SeekBar.Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/seekbar_height"
+            android:max="0x0a" />
+
+        <TextView
+            android:text="后    灯"
+            style="@style/seekBar_text"  />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/light_third"
+        style="@style/mySeekbar_linearLayout"
+        android:layout_toRightOf="@+id/light_second">
+
+        <com.bmw.dinosaursmall.view.view.VerticalPageSeekBar
+            android:id="@+id/ptz_light_seekBar"
+            style="@style/Widget.SeekBar.Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/seekbar_height"
+            android:max="0xff" />
+
+        <TextView
+            android:text="云台灯"
+            style="@style/seekBar_text"  />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

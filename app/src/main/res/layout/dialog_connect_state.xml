@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/bg_container_border_small"
+    android:padding="1dp">
+    <LinearLayout
+        android:id="@+id/connect_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/connect_text"
+            android:text="视频主机："/>
+        <TextView
+            android:id="@+id/connect_video_ip"
+            style="@style/connect_text"
+            android:text="192.168.191.1"/>
+        <ImageView
+            android:id="@+id/connect_video_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/disconnect"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/connect_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/connect_text"
+            android:text="控制主机："/>
+        <TextView
+            android:id="@+id/connect_control_ip"
+            style="@style/connect_text"
+            android:text="192.168.191.1"/>
+        <ImageView
+            android:id="@+id/connect_control_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/disconnect"/>
+    </LinearLayout>
+
+</RelativeLayout>

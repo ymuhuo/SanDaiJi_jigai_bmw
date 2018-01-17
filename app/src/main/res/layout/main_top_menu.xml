@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/preview_top_menu"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/top_menu"
+    android:background="@color/bg_base"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/capture"
+            style="@style/style_bottom_menu_img"
+            android:src="@mipmap/capture" />
+
+        <ImageView
+            android:id="@+id/record"
+            android:paddingTop="3dp"
+            style="@style/style_bottom_menu_img"
+            android:src="@mipmap/record" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/preview_battery"
+        style="@style/main_top_menu"
+        android:layout_toLeftOf="@+id/view_toleftof_preview_video"
+        android:paddingTop="5dp"
+        android:src="@mipmap/battery1" />
+
+
+    <ImageView
+        android:id="@+id/preview_connect"
+        android:paddingTop="3dp"
+        style="@style/style_bottom_menu_img"
+        android:src="@mipmap/disconnect" />
+
+    <ImageButton
+        android:id="@+id/preview_picture"
+        style="@style/main_top_menu"
+        android:layout_toLeftOf="@+id/view_toleftof_preview_model"
+        android:paddingTop="5dp"
+        android:src="@mipmap/picture" />
+
+
+    <ImageButton
+        android:id="@+id/preview_video"
+        style="@style/main_top_menu"
+        android:layout_toLeftOf="@+id/view_toleftof_preview_picture"
+        android:paddingTop="5dp"
+        android:src="@mipmap/video" />
+
+    <ImageButton
+        android:id="@+id/preview_model"
+        style="@style/main_top_menu"
+        android:layout_toLeftOf="@+id/view_toleftof_environment"
+        android:paddingTop="5dp"
+        android:src="@mipmap/model" />
+
+    <ImageButton
+        android:id="@+id/environment"
+        style="@style/main_top_menu"
+        android:layout_toLeftOf="@+id/view_toleftof_setting"
+        android:paddingBottom="2dp"
+        android:src="@mipmap/environmental" />
+
+    <ImageButton
+        android:id="@+id/preview_setting"
+        style="@style/main_top_menu"
+        android:layout_toLeftOf="@+id/view_toleftof_preview_shutdown"
+        android:paddingTop="1dp"
+        android:src="@mipmap/setting"
+        android:visibility="gone"/>
+
+
+
+
+    <ImageView
+        android:id="@+id/preview_shutdown"
+        style="@style/style_bottom_menu_img"
+        android:layout_marginLeft="0dp"
+        android:src="@mipmap/shutdown" />
+
+</LinearLayout>
